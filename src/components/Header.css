@@ -1,3 +1,7 @@
+.header {
+  overflow: hidden;
+}
+
 .header-top-strip {
   background-color: var(--color-header-strip);
   border-bottom:  1px solid var(--color-header-border);
@@ -7,7 +11,11 @@
 
 .header-upper {
   background-color: var(--color-header-upper);
-  border-bottom:  1px solid var(--color-header-border);
+  /* border-bottom:  1px solid var(--color-header-border); */
+}
+
+.header-upper .logo {
+  white-space: nowrap;
 }
 
 .header-upper .input-group-text {
@@ -31,7 +39,9 @@
   letter-spacing: .3px;
 }
 
-
+.header-cart-icon:hover {
+  transform: rotate(-7deg);
+}
 
 /* Header bottom*/
 
@@ -46,6 +56,10 @@
   line-height: 18px;
   letter-spacing: .3px;
   text-transform: uppercase;
+}
+
+.header-upper-links .header-font:hover {
+  color: var(--color-header-hover);
 }
 
 .icon-size {
@@ -68,4 +82,45 @@
 
 .header-bottom .dropdown-item:active {
   background-color: var(--color-header-bottom);
+}
+
+.memu-links .header-font:hover {
+  color: var(--color-header-hover);
+}
+
+/* hamberger */
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.menu-icon:hover {
+  color: var(--color-header-hover);
+}
+
+.header-menu button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  outline: none;
+}
+
+.header-ham-item img {
+  height: 25px;
+  width: 25px;
+}
+
+.header-ham-item .item {
+  width: 100%;
+  height: 35px;
+  color: white;
+  border-radius: 2px;
+}
+
+.header-ham-item .item:hover {
+  background-color: var(--color-header-upper);
 }

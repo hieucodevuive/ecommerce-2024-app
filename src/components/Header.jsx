@@ -4,10 +4,11 @@ import './Header.css';
 
 import { BsSearch } from 'react-icons/bs';
 import { BsFillGrid3X3GapFill } from 'react-icons/bs';
+import { BsMenuUp } from 'react-icons/bs';
 
 const Header = () => {
   return (
-    <>
+    <div className='header'>
       <header className='header-top-strip py-3'>
         <div className='container-xl'>
           <div className='row'>
@@ -30,14 +31,14 @@ const Header = () => {
       <header className='header-upper py-3'>
         <div className='container-xl'>
           <div className='row align-items-center'>
-            <div className='col-2'>
-              <h2>
+            <div className='col-xl-2 col-sm-4 col-lg-2'>
+              <h2 className='logo'>
                 <Link className='text-white' to={'/'}>
                   Smart Tech
                 </Link>
               </h2>
             </div>
-            <div className='col-5'>
+            <div className='col-xl-5 col-sm-4 col-lg-5'>
               <div className='input-group'>
                 <input
                   type='text'
@@ -50,7 +51,7 @@ const Header = () => {
                 </span>
               </div>
             </div>
-            <div className='col-5'>
+            <div className='col-xl-5 col-lg-5 d-none d-lg-block'>
               <div className='header-upper-links d-flex align-items-center justify-content-between'>
                 <div className=''>
                   <Link className='d-flex gap-2 align-items-center'>
@@ -81,7 +82,11 @@ const Header = () => {
                 </div>
                 <div className=''>
                   <Link className='d-flex gap-2 align-items-center'>
-                    <img src='/images/cart.svg' alt='cart' />
+                    <img
+                      src='/images/cart.svg'
+                      alt='cart'
+                      className='header-cart-icon'
+                    />
                     <div className='d-flex flex-column gap-1'>
                       <div className='badge bg-warning text-white rounded-pill '>
                         0
@@ -90,6 +95,60 @@ const Header = () => {
                     </div>
                   </Link>
                 </div>
+              </div>
+            </div>
+            {/* Hambergur menu */}
+            <nav className='header-menu col-sm-1 d-lg-none d-block'>
+              <button
+                class='navbar-toggler'
+                type='button'
+                data-bs-toggle='collapse'
+                data-bs-target='#navbarToggleExternalContent'
+                aria-controls='navbarToggleExternalContent'
+                aria-expanded='false'
+                aria-label='Toggle navigation'
+              >
+                <BsMenuUp className='menu-icon' />
+              </button>
+            </nav>
+            <div className='col-sm-1 d-lg-none d-block'>
+              <Link className='item d-flex gap-2 align-items-center'>
+                <img
+                  src='/images/cart.svg'
+                  alt='cart'
+                  className='header-cart-icon'
+                />
+                <div className='d-flex flex-column gap-1'>
+                  <div className='badge bg-warning text-white rounded-pill '>
+                    0
+                  </div>
+                  <div className='text-white'>$0.00</div>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div
+            class='collapse header-ham-item'
+            id='navbarToggleExternalContent'
+          >
+            <div className='bg-dark bg-gradient d-flex flex-column gap-2 p-2 mt-2 rounded-1'>
+              <div>
+                <Link className='item d-flex gap-2 align-items-center p-2'>
+                  <img src='/images/compare.svg' alt='compare' />
+                  <div className=''>Compare Products</div>
+                </Link>
+              </div>
+              <div>
+                <Link className='item d-flex gap-2 align-items-center p-2'>
+                  <img src='/images/wishlist.svg' alt='wishlist' />
+                  <div className=''>Favourite Wishlist</div>
+                </Link>
+              </div>
+              <div className=''>
+                <Link className='item d-flex gap-2 align-items-center p-2'>
+                  <img src='/images/user.svg' alt='user' />
+                  <div className=''>Log in Account</div>
+                </Link>
               </div>
             </div>
           </div>
@@ -156,7 +215,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 
