@@ -40,7 +40,7 @@ const Footer = () => {
       <footer className='footer-mid'>
         <div className='container-xl'>
           <div className='row footer-mid-content p-5'>
-            <div className='col-3 d-flex flex-column gap-3'>
+            <div className='col-6 col-md-3 col-lg-3 d-flex flex-column gap-3'>
               <div className='title'>Contact Us</div>
               <div className='d-flex flex-column gap-1 text'>
                 <div>Smart tech store</div>
@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className='col-2 d-flex flex-column gap-3'>
+            <div className='col-6 col-md-2 col-lg-2 d-flex flex-column gap-3'>
               <div className='title'>Information</div>
               <div className='text'>
                 <div>Privacy Policy</div>
@@ -86,7 +86,7 @@ const Footer = () => {
                 <div>Blogs</div>
               </div>
             </div>
-            <div className='col-2 d-flex flex-column gap-3'>
+            <div className='col-md-2 d-flex flex-column gap-3 d-none d-md-flex'>
               <div className='title'>Account</div>
               <div className='text'>
                 <div>Search</div>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <div>Size Chart</div>
               </div>
             </div>
-            <div className='col-2  d-flex flex-column gap-3'>
+            <div className='col-md-2  d-flex flex-column gap-3 d-none d-md-flex'>
               <div className='title'>Quick Link</div>
               <div className='text'>
                 <div>Accessories</div>
@@ -106,7 +106,7 @@ const Footer = () => {
                 <div>Tablets</div>
               </div>
             </div>
-            <div className='col-3 d-flex flex-column gap-3'>
+            <div className='col-md-3 d-flex flex-column gap-3 d-none d-md-flex'>
               <div className='title'>Our App</div>
               <div className='text'>
                 Dowload our App and get estra 15% Discount on your first Order
