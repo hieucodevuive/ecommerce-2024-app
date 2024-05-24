@@ -9,7 +9,7 @@ import { BsMenuUp } from 'react-icons/bs';
 const Header = () => {
   return (
     <div className='header'>
-      <header className='header-top-strip py-3'>
+      <header className='header-top-strip py-3 d-none d-sm-block'>
         <div className='container-xl'>
           <div className='row'>
             <div className='col-6'>
@@ -30,7 +30,7 @@ const Header = () => {
       </header>
       <header className='header-upper py-3'>
         <div className='container-xl'>
-          <div className='row align-items-center'>
+          <div className='d-flex row align-items-center d-none d-sm-flex'>
             <div className='col-xl-2 col-sm-4 col-lg-2'>
               <h2 className='logo'>
                 <Link className='text-white' to={'/'}>
@@ -127,6 +127,58 @@ const Header = () => {
               </Link>
             </div>
           </div>
+          {/* Mobile */}
+          <div className='row align-items-center d-sm-none'>
+            <nav className='header-menu col-1'>
+              <button
+                class='navbar-toggler'
+                type='button'
+                data-bs-toggle='collapse'
+                data-bs-target='#navbarToggleExternalContent'
+                aria-controls='navbarToggleExternalContent'
+                aria-expanded='false'
+                aria-label='Toggle navigation'
+              >
+                <BsMenuUp className='menu-icon' />
+              </button>
+            </nav>
+            <div className='col-4 mt-2'>
+              <h2 className='logo'>
+                <Link className='text-white' to={'/'}>
+                  Smart Tech
+                </Link>
+              </h2>
+            </div>
+            <div className='col-4'>
+              <div className='input-group'>
+                <input
+                  type='text'
+                  className='form-control'
+                  placeholder='Search...'
+                  aria-label='Search...'
+                />
+                <span className='input-group-text'>
+                  <BsSearch className='text-white fs-5' />
+                </span>
+              </div>
+            </div>
+
+            <div className='col-2'>
+              <Link className='item d-flex gap-2 align-items-center'>
+                <img
+                  src='/images/cart.svg'
+                  alt='cart'
+                  className='header-cart-icon'
+                />
+                <div className='d-flex flex-column gap-1'>
+                  <div className='badge bg-warning text-white rounded-pill '>
+                    0
+                  </div>
+                  <div className='text-white'>$0.00</div>
+                </div>
+              </Link>
+            </div>
+          </div>
           <div
             class='collapse header-ham-item'
             id='navbarToggleExternalContent'
@@ -158,12 +210,13 @@ const Header = () => {
         <div className='container-xl'>
           <div className='row'>
             <div className='col-12 d-flex align-items-center gap-4 py-2 px-0'>
-              <div className='dropdown'>
+              <div className='dropdown d-none d-sm-block'>
                 <button
                   className='btn dropdown-toggle text-white d-flex align-items-center gap-2'
                   type='button'
                   data-bs-toggle='dropdown'
                   aria-expanded='false'
+                  id='dropdownMenuButton1'
                 >
                   <BsFillGrid3X3GapFill className='text-white icon-size' /> SHOP
                   CATEGORIES
@@ -189,7 +242,7 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <div className='memu-links d-flex align-items-center gap-3 '>
+              <div className='memu-links p-2 d-flex align-items-center gap-3 '>
                 <div>
                   <NavLink className='header-font' to={'/'}>
                     Home
