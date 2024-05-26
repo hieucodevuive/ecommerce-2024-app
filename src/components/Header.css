@@ -124,3 +124,12 @@
 .header-ham-item .item:hover {
   background-color: var(--color-header-upper);
 }
+
+.dropdown {
+  position: unset;
+}
+
+.dropdown .dropdown-menu {
+  position: unset;
+  width: auto;
+}

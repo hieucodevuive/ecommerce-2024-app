@@ -1,0 +1,32 @@
+.home-wrapper-1 {
+
+}
+
+.catbanner {
+  position: relative;
+}
+
+.catbanner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.catbanner .overlay{
+  position: absolute; 
+  font-size: 20px;
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: calc(100% - 24px);
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.catbanner:hover .overlay {
+  opacity: 1;
+}
