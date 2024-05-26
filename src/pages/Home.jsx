@@ -105,6 +105,119 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className='wrapper-2 py-5'>
+        <div className='container'>
+          <div className='row d-flex align-items-center justify-content-center gap-3'>
+            <div className='col-xl-2 col-6 col-sm-4 d-flex policy-container'>
+              <div className='d-flex align-items-center gap-3'>
+                <img src='images/service.png' alt='' />
+                <div className='d-flex flex-column gap-1'>
+                  <h5 className=''>Free Shipping</h5>
+                  <span className=''>From all orders over $100</span>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-2 col-6 col-sm-4 d-flex policy-container'>
+              <div className='d-flex align-items-center gap-3'>
+                <img src='images/service-02.png' alt='' />
+                <div className='d-flex flex-column gap-1'>
+                  <h5 className=''>Daily Surprise Offers</h5>
+                  <span className=''>Save up to 25% off</span>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-2 col-6 col-sm-4 d-flex policy-container'>
+              <div className='d-flex align-items-center gap-3'>
+                <img src='images/service-03.png' alt='' />
+                <div className='d-flex flex-column gap-1'>
+                  <h5 className=''>Support 24/7</h5>
+                  <span className=''>Shop with an expert</span>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-2 col-6 col-sm-4 d-flex policy-container'>
+              <div className='d-flex align-items-center gap-3'>
+                <img src='images/service-04.png' alt='' />
+                <div className='d-flex flex-column gap-1'>
+                  <h5 className=''>Affordable Prices</h5>
+                  <span className=''>Get Factory direct price</span>
+                </div>
+              </div>
+            </div>
+            <div className='col-xl-2 col-6 col-sm-4 d-flex policy-container'>
+              <div className='d-flex align-items-center gap-3'>
+                <img src='images/service-05.png' alt='' />
+                <div className='d-flex flex-column gap-1'>
+                  <h5 className=''>Secure Payments</h5>
+                  <span className=''>100% Protected Payments</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className='wrapper-2 py-5'>
+        <div className='container'>
+          <div className='row categories f-flex align-items-center'>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+            <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
+              <div className='d-flex flex-column justify-content-between'>
+                <h5>Laptop</h5>
+                <span>8 items</span>
+              </div>
+              <img src='images/laptop.jpg' alt='' />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

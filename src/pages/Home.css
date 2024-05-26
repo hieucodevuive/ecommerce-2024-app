@@ -30,3 +30,51 @@
 .catbanner:hover .overlay {
   opacity: 1;
 }
+
+/* wrappert 2 */
+
+.wrapper-2 {
+  background-color: var(--color-header-wrapper-2);
+}
+
+.policy-container img{
+  height: 20px;
+}
+
+.policy-container h5 {
+  font-size: 14px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.policy-container span {
+  font-size: 12px;
+  opacity: .8;
+  text-wrap: nowrap;
+}
+
+.wrapper-2 .categories {
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+
+.categories .category-container {
+  border: 1px solid #f1f1f1;
+  border-radius: 2px;
+}
+
+.category-container h5 {
+  font-size: 16px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.category-container span {
+  font-size: 14px;
+  opacity: .8;
+  text-wrap: nowrap;
+}
