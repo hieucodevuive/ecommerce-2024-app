@@ -3,6 +3,7 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee"
 import BlogCard from '../components/BlogCard'
+import ProductCart from '../components/ProductCard'
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
             <div className='col-12 col-md-6 main-banner'>
               <div
                 id='carouselExampleDark'
-                class='carousel carousel-dark slide'
+                className='carousel carousel-dark slide'
                 data-bs-ride='carousel'
               >
                 <div className='carousel-indicators'>
@@ -249,6 +250,18 @@ const Home = () => {
                 <img src="images/brand-05.png" alt="" />
               </div>
             </Marquee>
+          </div>
+        </div>
+      </section>
+      <section className="blog-wrapper py-5 wrapper-2">
+        <div className="container d-flex flex-column gap-3">
+          <h2 className='section-title'>featured collection</h2>
+          <div className="row gap-3 justify-content-center">
+            < ProductCart />
+            < ProductCart />
+            < ProductCart />
+            < ProductCart />
+            < ProductCart />
           </div>
         </div>
       </section>

@@ -1,0 +1,94 @@
+.card-container {
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 10px;
+  width: 250px;
+  min-height: 350px;
+  overflow: hidden;
+
+}
+
+.header-container img{
+  cursor: pointer;
+}
+
+.card-container:hover .action-bar{
+  right: 12px;
+}
+
+.discount-percen {
+  background-color: var(--color-header-hover);
+  padding: 3px;
+  border-radius: 15px;
+}
+
+.discount-percen span {
+  color: black;
+  font-size: 12px;
+}
+
+.card-container p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.img-container {
+  height: 200px;
+  transition: all;
+}
+
+.img-container img{
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category {
+  color: orange;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.title:hover {
+  color: var(--color-header-hover);
+}
+
+.description {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.price {
+  color: red;
+  font-weight: 600;
+}
+
+.discound-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  opacity: .5;
+}
+
+.action-bar {
+  top: 10%;
+  right: -30px;
+  transition: .3s;
+}
+
+.action-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  
+}
+
+.action-icon:hover {
+  border-radius: 100%;
+  background-color: var(--color-header-hover);
+}
