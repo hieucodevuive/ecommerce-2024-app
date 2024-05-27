@@ -1,0 +1,27 @@
+.card {
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 10px;
+}
+
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card .btn {
+  background-color: var(--color-header-strip);
+  border-radius: 15px;
+  color: white;
+}
+
+.card .btn:hover {
+  color: var(--color-header-hover);
+  background-color: var(--color-header-upper);
+}
+
+.card .time {
+  font-size: small;
+  opacity: .7;
+}

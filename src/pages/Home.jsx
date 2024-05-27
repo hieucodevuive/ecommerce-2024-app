@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee"
+import BlogCard from '../components/BlogCard'
 
 const Home = () => {
   return (
@@ -248,6 +249,17 @@ const Home = () => {
                 <img src="images/brand-05.png" alt="" />
               </div>
             </Marquee>
+          </div>
+        </div>
+      </section>
+      <section className="blog-wrapper py-5 wrapper-2">
+        <div className="container d-flex flex-column gap-3">
+          <h2 className='section-title'>our lastest news</h2>
+          <div className="row">
+            < BlogCard />
+            < BlogCard />
+            < BlogCard />
+            < BlogCard />
           </div>
         </div>
       </section>
