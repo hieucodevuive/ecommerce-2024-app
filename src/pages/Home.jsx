@@ -1,6 +1,7 @@
-import React from 'react';
-import './Home.css';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import './Home.css'
+import { Link } from 'react-router-dom'
+import Marquee from "react-fast-marquee"
 
 const Home = () => {
   return (
@@ -161,56 +162,56 @@ const Home = () => {
           <div className='row categories f-flex align-items-center'>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Computer & Laptop</h5>
                 <span>8 items</span>
               </div>
               <img src='images/laptop.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Cameras & videos</h5>
                 <span>8 items</span>
               </div>
-              <img src='images/laptop.jpg' alt='' />
+              <img src='images/camera.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Smart Televison</h5>
                 <span>8 items</span>
               </div>
-              <img src='images/laptop.jpg' alt='' />
+              <img src='images/tv.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Accessories</h5>
                 <span>8 items</span>
               </div>
-              <img src='images/laptop.jpg' alt='' />
+              <img src='images/acc.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Headphones</h5>
                 <span>8 items</span>
               </div>
-              <img src='images/laptop.jpg' alt='' />
+              <img src='images/headphone.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Home Appliance</h5>
                 <span>8 items</span>
               </div>
-              <img src='images/laptop.jpg' alt='' />
+              <img src='images/homeapp.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Speaker</h5>
                 <span>8 items</span>
               </div>
-              <img src='images/laptop.jpg' alt='' />
+              <img src='images/speaker.jpg' alt='' />
             </div>
             <div className='col-lg-3 col-md-4 col-sm-6 d-flex align-items-center justify-content-center gap-2 category-container'>
               <div className='d-flex flex-column justify-content-between'>
-                <h5>Laptop</h5>
+                <h5>Phone & Tablet</h5>
                 <span>8 items</span>
               </div>
               <img src='images/laptop.jpg' alt='' />
@@ -218,8 +219,40 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className='marque-wrapper py-5'>
+        <div className='container'>
+          <div className="row">
+            <Marquee className='d-flex align-items-center justify-content-between'>
+              <div className="col-2 px-5">
+                <img src="images/brand-01.png" alt="" />
+              </div>
+              <div className="col-2 px-5">
+                <img src="images/brand-02.png" alt="" />
+              </div>
+              <div className="col-2 px-5">
+                <img src="images/brand-03.png" alt="" />
+              </div>
+              <div className="col-2 px-5">
+                <img src="images/brand-04.png" alt="" />
+              </div>
+              <div className="col-2 px-5">
+                <img src="images/brand-05.png" alt="" />
+              </div>
+              <div className="col-2 px-5">
+                <img src="images/brand-06.png" alt="" />
+              </div>
+              <div className="col-2 px-5">
+                <img src="images/brand-07.png" alt="" />
+              </div>
+              <div className="col-2 px-8">
+                <img src="images/brand-05.png" alt="" />
+              </div>
+            </Marquee>
+          </div>
+        </div>
+      </section>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -70,11 +70,19 @@
 .category-container h5 {
   font-size: 16px;
   font-weight: bold;
-  text-wrap: nowrap;
 }
 
 .category-container span {
   font-size: 14px;
   opacity: .8;
   text-wrap: nowrap;
+}
+
+.marque-wrapper {
+  background-color: var(--color-header-wrapper-2);
+
+}
+
+.marque-wrapper .container {
+  background-color: white;
 }
